@@ -51,39 +51,172 @@
 
         <section>
 
-            <h2>My Information</h2>
+    <h2>My Information</h2>
 
-            <div class="student-details">
+    <div class="student-profile">
 
-                <p><strong>Full Name:</strong> John Example</p>
+        <div class="student-photo-container">
 
-                <p><strong>Student ID:</strong> IYS2026001</p>
+            <img id="studentProfilePhoto"
+                 src="images/student-placeholder.png"
+                 alt="Student Photo"
+                 class="student-profile-photo">
 
-                <p><strong>Gender:</strong> Male</p>
-
-                <p><strong>Date of Birth:</strong> 15 January 2010</p>
-
-                <p><strong>Class:</strong> Form One</p>
-
-                <p><strong>Phone:</strong> 0750000000</p>
-
-                <p><strong>Email:</strong> student@example.com</p>
-
-            </div>
-
-        </section>
+        </div>
 
 
-        <section>
-
-            <h2>Application Status</h2>
+        <div class="student-details" id="studentDetails">
 
             <p>
-                <strong>Status:</strong>
-                <span class="status-pending">Pending</span>
+                <strong>Full Name:</strong>
+                <span id="studentName">Christian Chambua</span>
             </p>
 
-        </section>
+            <p>
+                <strong>Student ID:</strong>
+                <span id="studentId">IYS2026001</span>
+            </p>
+
+            <p>
+                <strong>Gender:</strong>
+                <span id="studentGender">Male</span>
+            </p>
+
+            <p>
+                <strong>Date of Birth:</strong>
+                <span id="studentDob">15 January 2010</span>
+            </p>
+
+            <p>
+                <strong>Class:</strong>
+                <span id="studentClass">Form One</span>
+            </p>
+
+            <p>
+                <strong>Phone:</strong>
+                <span id="studentPhone">0750881311</span>
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                <span id="studentEmail">christian01@gmail.com</span>
+            </p>
+
+            <p>
+                <strong>Address:</strong>
+                <span id="studentAddress">Mbeya, Tanzania</span>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <button type="button"
+            id="editProfileBtn"
+            class="action-btn">
+
+        Edit My Profile
+
+    </button>
+
+
+    <div id="profileEditForm" class="profile-edit-form">
+
+        <h3>Edit My Profile</h3>
+
+        <label for="editPhone">Phone</label>
+
+        <input type="tel"
+               id="editPhone"
+               pattern="[0-9]{10}"
+               placeholder="Enter phone number">
+
+
+        <label for="editEmail">Email</label>
+
+        <input type="email"
+               id="editEmail"
+               placeholder="Enter email address">
+
+
+        <label for="editAddress">Address</label>
+
+        <input type="text"
+               id="editAddress"
+               placeholder="Enter address">
+
+
+        <button type="button"
+                id="saveProfileBtn"
+                class="action-btn">
+
+            Save Changes
+
+        </button>
+
+        <button type="button"
+                id="cancelProfileBtn"
+                class="action-btn">
+
+            Cancel
+
+        </button>
+
+        <div id="profileMessage"></div>
+
+    </div>
+
+</section>
+
+
+<section id="applicationStatusSection">
+
+    <h2>Application Status</h2>
+
+    <div class="application-status-card">
+
+        <p>
+            <strong>Application ID:</strong>
+
+            <span id="myApplicationId">
+                IYSAPP2026001
+            </span>
+        </p>
+
+
+        <p>
+            <strong>Application Date:</strong>
+
+            <span id="myApplicationDate">
+                2026-08-20
+            </span>
+        </p>
+
+
+        <p>
+            <strong>Applying For:</strong>
+
+            <span id="myApplicationClass">
+                Form One
+            </span>
+        </p>
+
+
+        <p>
+            <strong>Status:</strong>
+
+            <span id="myApplicationStatus"
+                  class="status-pending">
+
+                Pending
+
+            </span>
+        </p>
+
+    </div>
+
+</section>
 
     </main>
 

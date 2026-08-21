@@ -103,27 +103,83 @@
                        id="address"
                        name="address"
                        placeholder="Enter residential address"
-                       required>  
+                       required>
+
+                <label for="studentPhoto">Student Photo</label>
+                <input type="file"
+                        id="studentPhoto"
+                        name="studentPhoto"
+                        accept="image/jpeg,image/png,image/webp"
+                        required>
+
+                <img id="studentPhotoPreview"
+                        src=""
+                        alt="Student Photo Preview"
+                        style="display: none;
+                        width: 150px;
+                        height: 180px;
+                        object-fit: cover;
+                        margin-top: 15px;
+                        border-radius: 15px;
+                        border: 3px solid #305CDE;">                
 
 
-                <h3>Academic Information</h3>
+                <h3>Education Background</h3>
 
-                <label for="previousSchool">Previous School</label>
-                <input type="text" id="previousSchool"
-                       name="previousSchool"
-                       placeholder="Enter previous school">
+<label for="previousSchool">Previous School</label>
+<input type="text"
+       id="previousSchool"
+       name="previousSchool"
+       placeholder="Enter previous school"
+       required>
 
+<label for="previousClass">Previous Class/Form</label>
+<select id="previousClass"
+        name="previousClass"
+        required>
 
-                <label for="class">Applying For</label>
-                <select id="class" name="class" required>
+    <option value="">Select Previous Class</option>
+    <option value="Standard Seven">Standard Seven</option>
+    <option value="Form One">Form One</option>
+    <option value="Form Two">Form Two</option>
+    <option value="Form Three">Form Three</option>
+    <option value="Form Four">Form Four</option>
 
-                    <option value="">Select Class</option>
-                    <option value="Form One">Form One</option>
-                    <option value="Form Two">Form Two</option>
-                    <option value="Form Three">Form Three</option>
-                    <option value="Form Four">Form Four</option>
+</select>
 
-                </select>
+<label for="completionYear">Year Completed</label>
+<input type="number"
+       id="completionYear"
+       name="completionYear"
+       placeholder="Enter completion year"
+       min="2000"
+       max="2100"
+       required>
+
+<label for="academicPerformance">Academic Performance</label>
+<input type="text"
+       id="academicPerformance"
+       name="academicPerformance"
+       placeholder="e.g. Division I, GPA, or average marks"
+       required>
+
+<h3>Academic Information</h3>
+
+<label for="applyingClass">Applying For</label>
+
+<select id="applyingClass"
+        name="applyingClass"
+        required>
+
+    <option value="">Select Class</option>
+    <option value="Form One">Form One</option>
+    <option value="Form Two">Form Two</option>
+    <option value="Form Three">Form Three</option>
+    <option value="Form Four">Form Four</option>
+    <option value="Form Five">Form Five</option>
+    <option value="Form Six">Form Six</option>
+
+</select>
 
 
                 <h3>Parent / Guardian Information</h3>

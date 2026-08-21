@@ -538,3 +538,196 @@ form .action-btn {
     width: 100%;
     overflow-x: auto;
 }
+
+/*APPLICATION STATUS*/
+
+.application-card {
+    background-color: #FFFFFF;
+    border: 2px solid #D5C58A;
+    border-radius: 25px;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.application-card h3 {
+    color: #305CDE;
+    margin-bottom: 15px;
+}
+
+.application-card p {
+    margin: 8px 0;
+}
+
+.application-actions {
+    margin-top: 20px;
+}
+
+.status-pending,
+.status-approved,
+.status-rejected {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.status-pending {
+    background-color: #D5C58A;
+    color: #000000;
+}
+
+.status-approved {
+    background-color: #305CDE;
+    color: #FFFFFF;
+}
+
+.status-rejected {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+/*STUDENT APPLICATION STATUS*/
+
+.application-status-card {
+    background-color: #FFFFFF;
+    border: 2px solid #D5C58A;
+    border-radius: 25px;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.application-status-card p {
+    margin: 10px 0;
+}
+
+.application-status-card strong {
+    color: #305CDE;
+}
+
+/*STUDENT PROFILE*/
+
+.student-profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.student-photo-container {
+    flex-shrink: 0;
+}
+
+.student-profile-photo {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #305CDE;
+    background-color: #D5C58A;
+}
+
+.student-details {
+    flex: 1;
+}
+
+.student-details p {
+    margin: 10px 0;
+}
+
+.student-details strong {
+    color: #305CDE;
+}
+
+
+/*PROFILE EDIT FORM*/
+
+.profile-edit-form {
+    display: none;
+
+    max-width: 600px;
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    background-color: #f8f8f8;
+
+    border: 2px solid #D5C58A;
+
+    border-radius: 20px;
+}
+
+.profile-edit-form h3 {
+    color: #305CDE;
+    margin-bottom: 15px;
+}
+
+.profile-edit-form label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+}
+
+.profile-edit-form input {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 6px;
+
+    border: 2px solid #D5C58A;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    font-family: Arial, sans-serif;
+}
+
+.profile-edit-form input:focus {
+    outline: none;
+
+    border-color: #305CDE;
+}
+
+.profile-edit-form .action-btn {
+    margin-top: 20px;
+
+    margin-right: 8px;
+
+    cursor: pointer;
+}
+
+#profileMessage {
+    margin-top: 15px;
+
+    font-weight: bold;
+
+    color: #305CDE;
+}
+
+
+/*MOBILE STUDENT PROFILE*/
+
+@media (max-width: 768px) {
+
+    .student-profile {
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: left;
+    }
+
+    .student-profile-photo {
+        width: 140px;
+        height: 170px;
+    }
+
+    .student-details {
+        width: 100%;
+    }
+
+}

@@ -57,11 +57,11 @@
 
         <input type="text"
                id="studentSearch"
-               placeholder="Search student by name or ID">
+               placeholder="Search student by name, ID, Class or Status">
 
-        <a href="application.html" class="action-btn">
+        <button type="button" id="addStudentBtn" class="action-btn">
             + Add Student
-        </a>
+        </button>
 
     </div>
 
@@ -86,10 +86,10 @@
 
                         <tr>
                             <td>IYS2026001</td>
-                            <td>John Example</td>
+                            <td>Christian Chambua</td>
                             <td>Male</td>
                             <td>Form One</td>
-                            <td>Active</td>
+                            <td>Pending</td>
                             <td>
                                 <button class="edit-btn">Edit</button>
                                 <button class="delete-btn">Delete</button>
@@ -98,7 +98,7 @@
 
                         <tr>
                             <td>IYS2026002</td>
-                            <td>Mary Example</td>
+                            <td>Mary Michael</td>
                             <td>Female</td>
                             <td>Form One</td>
                             <td>Active</td>
@@ -110,7 +110,7 @@
 
                         <tr>
                             <td>IYS2026003</td>
-                            <td>Peter Example</td>
+                            <td>Peter David</td>
                             <td>Male</td>
                             <td>Form Two</td>
                             <td>Active</td>
@@ -131,17 +131,58 @@
 
         <section>
 
-            <h2>Student Applications</h2>
+    <h2>Student Applications</h2>
 
-            <p>
-                View and manage submitted student applications.
-            </p>
+    <p>
+        View and manage submitted student applications.
+    </p>
 
-            <a href="application.html" class="action-btn">
-                View Applications
-            </a>
+    <div class="application-card">
 
-        </section>
+        <h3>Christian Chambua</h3>
+
+        <p>
+            <strong>Application ID:</strong>
+            IYSAPP2026001
+        </p>
+
+        <p>
+            <strong>Student ID:</strong>
+            IYS2026001
+        </p>
+
+        <p>
+            <strong>Class:</strong>
+            Form One
+        </p>
+
+        <p>
+            <strong>Application Status:</strong>
+
+            <span id="christianStatus" class="status-pending">
+                Pending
+            </span>
+        </p>
+
+        <div class="application-actions">
+
+            <button type="button"
+                    id="approveApplicationBtn"
+                    class="edit-btn">
+                Approve
+            </button>
+
+            <button type="button"
+                    id="rejectApplicationBtn"
+                    class="delete-btn">
+                Reject
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
 
     </main>
 
